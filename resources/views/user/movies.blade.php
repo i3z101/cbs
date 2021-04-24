@@ -13,7 +13,7 @@
         <div class="grid md:grid-cols-4 grid-cols-1 p-10">
             @foreach ($cinemas as $cinema)
                 @foreach ($cinema->movie as $movie)
-                    <div class="border border-yellow-300 grid grid-cols-1 mb-4 md:mb-0 p-5 ml-8">
+                    <div class="border border-yellow-300 grid grid-cols-1 mb-4 md:mb-0 p-5 ml-3 md:ml-8">
                         <img src="{{asset('posters/' . $movie->mPoster)}}" class="m-auto" alt="" width="120">
                         <div>
                             <div class="grid grid-cols-2">
