@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.li-nav{
+    @apply mb-5 border border-yellow-300 rounded-md p-2 text-center cursor-pointer transition-all duration-200 text-sm text-white;
+}
+
+.li-nav:hover{
+    @apply bg-yellow-400 text-white;
+}
+
+.drawer-close{
+    animation: drawerclose;
+    animation-duration: .2s;
+    overflow: hidden;
+    right: -200px;
+}
+
+.drawer-open{
+    overflow: hidden;
+    transition: all ease-in .5s;
+    animation-name: draweropen;
+    animation-duration: .2s;
+    right: 0;
+}
+
+@keyframes draweropen {
+    from{right: -200px; overflow: hidden;}
+    to{right: 0; overflow: hidden;}
+}
+
+
+@keyframes drawerclose {
+    from{right: 0; overflow: hidden;}
+    to{right: -200px; overflow: hidden;}
+}
+
+.user-text-style{
+    @apply text-gray-300 font-body mb-3;
+}
+
+.btn-style{
+    @apply p-1 rounded-md text-center text-sm md:text-lg mb-7 p-2 md:p-1;
+}
+
+.user-input-style{
+    @apply mb-5 p-4 bg-transparent border border-yellow-300 rounded-lg text-gray-200 focus:outline-none outline-none font-body text-xl;
+}
+
+.size{
+    font-size: 17px;
+}
+
+.movie-input-label{
+    @apply text-gray-200 text-lg ml-1 mb-1 font-body;
+}
+
+.selected{
+    @apply border-yellow-300 text-gray-200
+}
+
+.btn-animation{
+    animation: btnAnimation;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btnAnimation {
+    from{border-color: #fcd34d; color: #e5e7eb;}
+    to{border-color: white; color: #fcd34d;};
+}
+
+.open-modal{
+    animation: openModal;
+    animation-duration: 2s;
+    top: 0px;
+}
+
+@keyframes openModal {
+    from{top:-300px;}
+    to{top: 0px;};
+}
+
+.close-modal{
+    animation: closeModal;
+    animation-duration: 2s;
+    top: -1000px;
+}
+
+@keyframes closeModal {
+    from{top:0px;}
+    to{top: -1000px;};
+}
+
+.email-width{
+    width: 132px;
+}
+
+
+@media only screen and (min-wid:300) and (max-width:600px){
+    input{
+        size: 16px;
+    }
+} 

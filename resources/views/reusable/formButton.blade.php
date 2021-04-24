@@ -1,0 +1,1 @@
+<button type="submit" class="border border-yellow-300 transition-all duration-200 text-gray-200 hover:bg-yellow-300 text-2xl p-2 w-1/2 md:w-1/3 rounded-lg hover:text-black text-center self-center mb-5 mt-5 font-body focus:outline-none outline-none">{{$btnText}}</button>

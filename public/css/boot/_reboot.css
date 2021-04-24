@@ -1,0 +1,12 @@
+a {
+  text-decoration: none !important;
+  color: #374151 !important;
+}
+a a:hover {
+  text-decoration: none !important;
+  color: #374151 !important;
+}
+
+.nav-a {
+  color: white;
+}
