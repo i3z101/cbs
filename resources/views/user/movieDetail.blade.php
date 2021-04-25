@@ -5,7 +5,7 @@
 
 @section('showMovie')
 
-<div id="main" class="relative">
+<div id="main" class="relative m-auto">
     <div id="main2">
         @include('reusable.caption', ['title'=>$movie->mName])
 
