@@ -88,7 +88,6 @@ if(completeBtn!=null){
                 top:170,
                 behavior:'smooth'
             });
-            modal.classList.remove('modal');
         }
         localStorage.setItem('price', price);
         main2.style.opacity= 0.02;
