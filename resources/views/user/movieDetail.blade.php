@@ -5,7 +5,7 @@
 
 @section('showMovie')
 
-<div id="main" class="relative m-auto">
+<div id="main" class="relative">
     <div id="main2">
         @include('reusable.caption', ['title'=>$movie->mName])
 
@@ -43,10 +43,12 @@
     @endif
     @foreach ($cinemas as $cinema)
       @if($cinema->cId == $movie->cinemaId)
-        @include('components.modal', [
-            'movieName' => $movie->mName,
-            'cinemaName'=> $cinema->cName
-        ])
+        <div class="absolute">
+            @include('components.modal', [
+                'movieName' => $movie->mName,
+                'cinemaName'=> $cinema->cName
+            ])
+        </div>
       @endif
     @endforeach
 </div>
