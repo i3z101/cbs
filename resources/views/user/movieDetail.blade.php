@@ -43,7 +43,7 @@
     @endif
     @foreach ($cinemas as $cinema)
       @if($cinema->cId == $movie->cinemaId)
-        <div class="absolute top-0 left-20">
+        <div class="absolute top-0 left-36">
             @include('components.modal', [
                 'movieName' => $movie->mName,
                 'cinemaName'=> $cinema->cName
