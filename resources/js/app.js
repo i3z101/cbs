@@ -18,6 +18,10 @@ const completeBtnForm= document.querySelector('#complete-btn');
 let price;
 
 
+if(modal!=null){
+    modal.removeAttribute('open');
+}
+
 if(message!=null){
     setTimeout(()=>{
         main.removeChild(message);

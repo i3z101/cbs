@@ -119,7 +119,3 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
-.modal-mov{
-    margin-left: 600px;
-}
