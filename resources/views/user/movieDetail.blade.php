@@ -43,12 +43,10 @@
     @endif
     @foreach ($cinemas as $cinema)
       @if($cinema->cId == $movie->cinemaId)
-        <div class="flex flex-col justify-center items-center">
-            @include('components.modal', [
-                'movieName' => $movie->mName,
-                'cinemaName'=> $cinema->cName
-            ])
-        </div>
+        @include('components.modal', [
+            'movieName' => $movie->mName,
+            'cinemaName'=> $cinema->cName
+        ])
       @endif
     @endforeach
 </div>
