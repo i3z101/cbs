@@ -1,4 +1,4 @@
-<dialog class="border border-yellow-300 bg-transparent rounded-md mt-10 w-72 absolute ml-12 md:ml-72 md:w-96 md:absolute" id="modal">
+<dialog class="border border-yellow-300 bg-transparent rounded-md mt-10 w-72 absolute ml-12 md:modal-mov md:w-96 md:absolute" id="modal">
     <form action="/complete" method="POST" class="flex flex-col w-full justify-center items-center">
         @csrf
         <input type="text" name="name" required placeholder="Your name" class="border-b border-gray-200 bg-transparent w-4/5 placeholder-gray-500 text-gray-200 focus:outline-none outline-none mb-3 p-4 text-xl font-body">
